@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Layout</title>
+    <style>
+        .container{
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            /* grid-template-rows: repeat(12, 1fr); */
+            height: 550px;
+            gap: 10px;
+            font-size: 28px;
+            color: white;
+            font-weight: 700;
+            text-align: center;
+            border-radius: 8px;
+        }
+        .box-1{
+            background-color: crimson;
+            grid-column: 1/span 6;
+            grid-row: 1/span 12;
+            border-radius: 8px;
+
+        }
+        .box-2{
+            background-color: rgb(255, 136, 0);
+            grid-column: 7/span 6;
+            grid-row: 1/span 6;
+            border-radius: 8px;
+        }
+        .box-3{
+            background-color: blueviolet;
+            grid-column: 7/span 3;
+            grid-row: 7/span 6;
+            border-radius: 8px;
+        }
+        .box-4{
+            background-color: grey;
+            grid-column: 10/span 3;
+            grid-row: 7/span 6;
+            border-radius: 8px;
+        }
+
+        @media screen and (max-width: 576px) {
+            .container{
+               flex-direction: row-reverse;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box-1">box_1</div>
+        <div class="box-2">box_2</div>
+        <div class="box-3">box_3</div>
+        <div class="box-4">box_4</div>
+    </div>
+</body>
+</html>

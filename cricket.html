@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cricket</title>
+    <style>
+        .field{
+            border: 1px solid seagreen;
+        }
+        .bat{
+            transition: transform 0.1s ease-in;
+        }
+        .ball{
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: red;
+            position: relative;
+            left: 515px;
+            transition: transform 1s ease-out 0.2s;
+        }
+        .field:hover .bat{
+            transform: rotate(-60deg);
+            transform-origin: top right;
+        }
+        .field:hover .ball{
+            transform: translate(800px, -500px);
+        }
+
+
+        .field-1{
+            border: 1px solid green;
+        }
+        .field-1:hover .bat-1{
+            transform: rotate(-60deg);
+            transform-origin: top right;
+        }
+        .field-1:hover .ball-1{
+            transform: translate(800px, -500px);
+        }
+        .ball-1{
+            width: 50px;
+            height: 50px;
+            background-color: green;
+            border-radius: 50%;
+            position: relative;
+            left: 515px;
+            transition: transform 1s ease-out 0.2s;
+        }
+        .bat-1{
+            transition: transform 0.1s;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="field">
+        <img class="bat" src="images/bat.png" alt="">
+        <div class="ball">
+
+        </div>
+    </div>
+    <div class="field-1">
+        <img src="images/bat.png" alt="" 
+        class="bat-1">
+        <div class="ball-1">
+
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design Responsive Layout - ll</title>
+    <style>
+        body{
+            max-width: 1440px;
+        }
+        .photos-content{
+            width: 400px;
+            height: 250px;
+        }
+        img{
+            width: 100%;
+            height: 100%;
+        }
+        .btn-primary{
+            padding: 10px 20px;
+            background-color: crimson;
+            color: white;
+            font-size: 18px;
+            font-weight: 700;
+        }
+        .content{
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+            border: 2px solid ;
+        }
+        .content-1{
+            margin-top: 10px;
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+            border: 2px solid ;
+        }
+        @media screen and (max-width: 576px) {
+            .content{
+                flex-direction: column;
+            }
+            .content-1{
+                flex-direction: column;
+            }
+        }
+    
+    </style>
+</head>
+<body>
+        <div class="container">
+            <div class="content">
+                <div class="photos-content">
+                    <img src="images/holiday.jpg" alt="">
+                </div>
+               
+                <div class="text-content">
+                    <h3>Post Title Will Be Here</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro optio perspiciatis quas pariatur consectetur neque exercitationem corporis iusto. Animi doloribus quam nam aliquid reiciendis veniam ratione. Magni quia consequuntur iure?</p>
+                    <button class="btn-primary">Read More</button>
+                </div>
+            </div>
+            <div class="content-1">
+                <div class="photos-content">
+                    <img src="images/holiday.jpg" alt="">
+                </div>
+               
+                <div class="text-content">
+                    <h3>Post Title Will Be Here</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro optio perspiciatis quas pariatur consectetur neque exercitationem corporis iusto. Animi doloribus quam nam aliquid reiciendis veniam ratione. Magni quia consequuntur iure?</p>
+                    <button class="btn-primary">Read More</button>
+                </div>
+            </div>
+        </div>
+</body>
+</html>
